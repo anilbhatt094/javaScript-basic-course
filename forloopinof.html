@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For loop in OF</title>
+</head>
+<body>
+
+<script>
+var person={
+	firstname: "Anil",
+	lastname: "Bhatt"
+}
+// For in Loop
+for(value in person){
+	document.writeln(value + " " + person[value]);
+}
+document.write("<br>");
+// For Of Loop
+
+var alphabets =["A" , "B" , "C" , "D" , "E"];
+
+// for(valueobj of alphabets){
+// 	document.writeln(valueobj);
+// }
+
+for(let i=0; i<=alphabets.length -1; i++){
+	document.writeln(alphabets[i]);
+}
+</script>
+</body>
+</html>

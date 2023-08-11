@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment Operator</title>
+</head>
+<body>
+<script>
+var x = true;
+var y = false;
+var z = x	 ? "True check" : "False check";
+
+document.write("If else short code " + z);
+document.write("<br>");
+
+var c = (1,2,3)
+document.write("Comma OPerator show last value" + " " + c);
+document.write("<br>");
+
+var person ={
+ firstname: "Anil",
+ lastName: "Bhatt",
+ age: "29"
+}
+delete person.firstname;
+document.write("delete property" + " " + person.age + " " + person.firstname + " " + person.lastName);
+
+document.write("<br>");
+
+var d = 'lastName' in person ? true : false;
+document.write("Value of d" + " " + d);
+document.write("<br>");
+document.write("if person is a instance of string " + (person instanceof ArrayBuffer));
+
+document.write("<br>");
+
+document.write("typeoff" + " " + typeof(c));
+document.write("<br>");
+
+</script>
+</body>
+</html>

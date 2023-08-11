@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Function</title>
+</head>
+<body>
+	
+<script>
+//function object
+var add = new Function("num1","num2" , "return num1 * num2");
+document.write(add(2,8));
+
+document.write("<br>")
+//function call
+function Emp(id,name){
+	this.id=id;
+	this.name=name;
+}
+function PermanentEmp(id,name){
+	Emp.call(this,id,name);
+}
+function TempEmp(id,name){
+	Emp.call(this,id,name);
+}
+var pemp = new PermanentEmp(1, "Anil Bhatt");
+var temp = new TempEmp(2, "Akash Bhatt");
+
+document.writeln(pemp.id + " " + pemp.name);
+document.write("<br>")
+document.writeln(temp.id + " " + temp.name);
+</script>
+</body>
+</html>
